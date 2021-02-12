@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            
+        {% endblock %}
+        {% load static %}
+    </title>
+    {% block head %}
+        
+    {% endblock %}
+    <style>
+        html{
+            background-color: rgb(234, 174, 247);
+            background-color: black;
+            height: 100%;
+        }
+        
+        header {
+            background-color: #f1f1f1;
+            padding: 15px;
+            color: black;
+            overflow: hidden;
+              
+        }
+        
+        header #row  a {    
+            float: left;
+            display: inline;
+            padding: 14px 16px;
+            text-decoration: none;
+            box-sizing: border-box; 
+            padding-left: 2cm;
+            
+        }
+        header #row  a i {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #row nav ul li {
+            font-size: large;
+           display: block;  
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+        
+        }
+      body{
+            background-image: url("https://www.assureshift.in/sites/default/files/images/blog/Taking-care-of-yourself-and-your-family-health-during-a-move.jpg");/*url("https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif"); url("https://thumbs.gfycat.com/NippyExhaustedAsiaticmouflon-max-1mb.gif");*/
+            /* GIF Links
+                    https://www.assureshift.in/sites/default/files/images/blog/Taking-care-of-yourself-and-your-family-health-during-a-move.jpg
+                    https://i.gifer.com/Pxyz.gif
+                    https://cutewallpaper.org/21/background-gif-html/Background-GIFs-Get-the-best-GIF-on-GIPHY.gif
+                    https://i.pinimg.com/originals/2d/44/e9/2d44e965dff94b7aa7a51fb42f25faf8.gif
+                    https://thumbs.gfycat.com/NippyExhaustedAsiaticmouflon-max-1mb.gif
+                    https://hetnice.blogspot.com/2019/09/gif-wallpaper-city.html
+            */
+            background-size: 100%;
+            background-repeat: x-repeat;
+            color: black;
+            font-family: cursive;
+            font-style: oblique;
+        } 
+        /*https://i.pinimg.com/originals/5c/f2/66/5cf2660af5f4214def7166dc7a7c8062.jpg*/
+
+        marquee {
+            color:black;
+        }
+
+        a{
+            text-decoration: none;
+            text-emphasis: transperent;
+        } 
+        button{
+            background-color: rgb(94, 5, 2);
+            border: solid black;
+        }
+        #whoareyou {
+            background-color: #310223 ;
+            align-content: center;
+            text-align: center;
+            padding: 1px;
+            border-radius: 2em;
+            border: 1px solid black;
+            /*border-left: -10%;
+            border-right: -10%;*/
+            border-width: 5px;
+            margin: 500px 300px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+       }
+        #whoareyou  h1{
+            color: white;
+            font-size: 48px;
+        }
+        #whoareyou button {
+            border-radius: 1em;
+            border: solid black;
+            background-color: rgb(214, 143, 162);
+            /*margin: 1cm solid black;*/
+            padding: 14px 20px;
+            margin-right: 2cm;
+            margin-left: 2cm;
+            font-size: large;
+            color: aliceblue;
+        }
+        #whoareyou button:hover{
+            background: blue;
+            color: white;
+            text-shadow: 2ch;
+            border: 1mm solid black;
+            border-radius: 1em;
+        }
+        #whoareyou button img {
+            border: solid black;
+            height: 4cm;
+            width: 4cm;
+        }
+        
+        video{
+            align-items: center;
+            align-content: center;
+            position: center;
+        }
+        
+        #videoBG{
+            position: fixed;
+            z-index: -1;
+        }
+        @media(min-aspect-ratio: 16/9){
+            #videoBG{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media(max-aspect-ratio: 16/9){
+            #videoBG{
+                width: auto;
+                height: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<header>
+    <div id="row">
+    <h2> <a href={% url 'index' %}> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgguvLm-17CO_FHxScL1skHgjZ4godfUfaLQ&usqp=CAU" alt="logo"> </a> <a href= {% url 'index' %} >For Better Tomorrow</a> </h2>
+        
+        <a href="#1"> <i> First </i> </a>
+        <a href="#2"> <i> Second </i> </a>
+        <a href="#3"> <i> Third </i> </a>
+        <a href="#4"> <i> Fourth </i> </a>
+        &nbsp;&nbsp;
+          <a href={% url 'aboutus' %}> <i> About us</i> </a> 
+    </div>
+</header>
+<br>
+<body> 
+    {% block bodycontent %}
+
+        
+    {% endblock  %}  
+</body>
+
+
+
+<script>
+
+</script>
+
+</html>
