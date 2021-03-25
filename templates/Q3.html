@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+</head>
+
+<body>
+    <h1></h1>
+
+    <br>
+    <form action='/result' method='post'> {% csrf_token %}
+        Name:
+        <input type="text" name="name" value="" maxlength="100" />
+        <br />
+
+        Roll Number:
+        <input type="text" name="roll" value="" maxlength="100" />
+        <br />
+        Branch:
+        <input type="text" name="branch" value="" maxlength="100" />
+        <br />
+
+        College:
+        <input type="text" name="college" value="" maxlength="100" />
+        <br />
+        Maximum marks of each subject:
+        <input type="text" name="maxmarks" value="" maxlength="100" />
+        <br />
+
+        Subject 1 marks obtained:
+        <input type="text" name="sub1" value="" maxlength="100" />
+        <br />
+        Subject 2 marks obtained:
+        <input type="text" name="sub2" value="" maxlength="100" />
+        <br />
+
+        Subject 3 marks obtained:
+        <input type="text" name="sub3" value="" maxlength="100" />
+        <br />
+        Subject 4 marks obtained:
+        <input type="text" name="sub4" value="" maxlength="100" />
+        <br />
+
+        Subject 5 marks obtained:
+        <input type="text" name="sub5" value="" maxlength="100" />
+        <br />
+
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+
+</html>

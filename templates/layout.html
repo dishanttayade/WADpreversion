@@ -13,9 +13,7 @@
         
     {% endblock %}
     <style>
-        html{
-            background-color: rgb(234, 174, 247);
-            background-color: black;
+        html{    
             height: 100%;
         }
         
@@ -24,22 +22,28 @@
             padding: 15px;
             color: black;
             overflow: hidden;
+            width: 100%;
               
+        }
+        header #row i{
+            border: 1px solid black;
+            margin-left: 5px;
         }
         
         header #row  a {    
             float: left;
-            display: inline;
-            padding: 14px 16px;
+            display: flexbox;
             text-decoration: none;
             box-sizing: border-box; 
-            padding-left: 2cm;
-            
-        }
-        header #row  a i {
+            margin-left: 3cm;
             border: 1px solid black;
             padding: 5px;
         }
+        header #row h2 a{
+            border: none;
+            margin-left: 1cm;
+        }
+        
         #row nav ul li {
             font-size: large;
            display: block;  
@@ -90,7 +94,7 @@
             border-right: -10%;*/
             border-width: 5px;
             margin: 500px 300px;
-            margin-top: 10px;
+            margin-top: 1px;
             margin-bottom: 10px;
             
        }
@@ -150,14 +154,16 @@
 </head>
 <header>
     <div id="row">
-    <h2> <a href={% url 'index' %}> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgguvLm-17CO_FHxScL1skHgjZ4godfUfaLQ&usqp=CAU" alt="logo"> </a> <a href= {% url 'index' %} >For Better Tomorrow</a> </h2>
-        
-        <a href="#1"> <i> First </i> </a>
-        <a href="#2"> <i> Second </i> </a>
-        <a href="#3"> <i> Third </i> </a>
-        <a href="#4"> <i> Fourth </i> </a>
-        &nbsp;&nbsp;
-          <a href={% url 'aboutus' %}> <i> About us</i> </a> 
+        <h2> <a href={% url 'index' %}> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgguvLm-17CO_FHxScL1skHgjZ4godfUfaLQ&usqp=CAU" alt="logo"> </a>
+         <a href= {% url 'index' %} >For Better Tomorrow</a> </h2>
+        <i>
+            <a href="#1">  First  </a>
+            <a href="#2">  Second  </a>
+            <a href="#3">  Third  </a>
+            <a href={% url 'login' %}>  Sign Up/Login </a>
+            &nbsp;&nbsp;
+            <a href={% url 'aboutus' %}> About us </a> 
+        </i>
     </div>
 </header>
 <br>
